@@ -38,3 +38,14 @@ Git是一个免费开源的分布式版本管理系统
 场景2：当你不但改乱了工作区某个文件的内容，还添加到了暂存区时，想丢弃修改，分两步，第一步用命令`git reset HEAD 文件名`，就回到了场景1，第二步按场景1操作。
 
 场景3：已经提交了不合适的修改到版本库时，想要撤销本次提交，参考[版本回退]一节，不过前提是没有推送到远程库。
+
+### 远程仓库
+
+- 设置远程关联许可
+  - `$ ssh-keygen -t rsa -C "youremail@example.com"`，获取SSH key
+  - 登录Github，复制*id_rsa.pub* 的内容， 添加SSH key
+- 本地项目关联远程仓库
+  - `git remote add origin git@github.com:michaelliao/learngit.git`，本地库关联至远程库，origin是远程库名，可更改
+  - `git push -u origin master `， 将本地库master分支内容推送至远程库master分支，`-u`参数将本地master分支与远程master分支关联起来
+- 克隆远程仓库项目
+  - `git clone git@github.com:michaelliao/learngit.git`，克隆项目到本地
