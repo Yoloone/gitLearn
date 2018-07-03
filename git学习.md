@@ -48,5 +48,6 @@ Git是一个免费开源的分布式版本管理系统
   - `git remote add origin git@server-name:path/repo-name.git `，本地库关联至远程库，origin是远程库名，可更改
   - `git push -u origin master `， 第一次推送，将本地库master分支内容推送至远程库master分支，`-u`参数将本地master分支与远程master分支关联起来
   - `git push origin master`，推送最新修改
-- 克隆远程仓库项目哈哈哈
-  - `git clone git@server-name:path/repo-name.git `，克隆项目到本地到都发
+- 克隆远程仓库项目
+  - `git clone git@server-name:path/repo-name.git `，克隆项目到本地
+
